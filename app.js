@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
         createForm.reset();
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Delete Functionality
+    const stockList = document.querySelector('.stock-list'); // Assuming you have a list/container for stocks
+
+    stockList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('delete-btn')) {
+            const stockItem = e.target.parentElement;
+            stockItem.remove();
+            console.log('Deleted stock:', stockItem.querySelector('.stock-name').textContent);
+        }
+    });
+});
+
