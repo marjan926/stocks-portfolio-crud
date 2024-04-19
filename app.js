@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         createForm.reset();
     });
 
-    // Delete and Update Functionality
     stockList.addEventListener('click', (e) => {
         if (e.target.classList.contains('delete-btn')) {
             const stockItem = e.target.parentElement;
