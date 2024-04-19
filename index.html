@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocks Portfolio CRUD</title>
-    
-<script src="app.js"></script>
-
 </head>
-
 <body>
     <h1>Stocks Portfolio</h1>
 
-<div class="stock-item">
-    <span class="stock-name">Stock Name</span>
-    <span class="stock-symbol">Stock Symbol</span>
-    <span class="stock-price">Stock Price</span>
-    <button class="delete-btn">Delete</button>
-</div>
+    <div class="stock-item displayed-stock">
+        <span class="stock-name">Stock Name 1</span>
+        <span class="stock-symbol">Stock Symbol 1</span>
+        <span class="stock-price">Stock Price 1</span>
+        <button class="delete-btn">Delete</button>
+    </div>
 
-    <div class="stock-item">
-        <span class="stock-name" contenteditable="true">Stock Name</span>
-        <span class="stock-symbol" contenteditable="true">Stock Symbol</span>
-        <span class="stock-price" contenteditable="true">Stock Price</span>
+    <div class="stock-item update-stock">
+        <label for="update-stock-name">Stock Name:</label>
+        <span class="stock-name" contenteditable="true" id="update-stock-name">Stock Name 2</span>
+        
+        <label for="update-stock-symbol">Stock Symbol:</label>
+        <span class="stock-symbol" contenteditable="true" id="update-stock-symbol">Stock Symbol 2</span>
+        
+        <label for="update-stock-price">Stock Price:</label>
+        <span class="stock-price" contenteditable="true" id="update-stock-price">Stock Price 2</span>
+        
         <button class="update-btn">Update</button>
     </div>
     
